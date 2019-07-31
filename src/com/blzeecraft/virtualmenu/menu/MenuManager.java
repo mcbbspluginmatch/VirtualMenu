@@ -1,4 +1,4 @@
-package com.blzeecraft.virtualmenu.chest;
+package com.blzeecraft.virtualmenu.menu;
 
 import java.io.File;
 import java.util.Map;
@@ -8,8 +8,8 @@ import org.bukkit.configuration.file.YamlConfiguration;
 
 import com.blzeecraft.virtualmenu.InsensitiveMap;
 import com.blzeecraft.virtualmenu.VirtualMenuPlugin;
-import com.blzeecraft.virtualmenu.chest.icon.ExtendedIcon;
 import com.blzeecraft.virtualmenu.config.ConfigReader;
+import com.blzeecraft.virtualmenu.menu.iiem.ExtendedIcon;
 
 import lombok.Getter;
 
@@ -43,7 +43,6 @@ public class MenuManager {
 				menus.put(name, menu);
 			}
 		}
-		System.out.println(menus);
 	}
 	
 	@lombok.SneakyThrows
