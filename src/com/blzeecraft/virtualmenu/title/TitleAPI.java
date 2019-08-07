@@ -9,6 +9,7 @@ public class TitleAPI {
 	public static final ITitleAPI API = getAPI();
 	
 	public static ITitleAPI getAPI() {
+		// 为什么写了两遍 —— 754503921
 		try {
 			Player.class.getMethod("sendActionBar", String.class);
 			return new TitleBukkit();

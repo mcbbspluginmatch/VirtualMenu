@@ -37,6 +37,7 @@ public class BoundManager implements ILog {
 	public void read() {
 		FileConfiguration boundConfig = YamlConfiguration.loadConfiguration(pl.getFileManager().getBoundFile());
 		bounds.clear();
+		// 明明不需要，为什么要整一个 label 在这里 —— 754503921
 		l1:for(String path : boundConfig.getKeys(false)) {
 			ConfigurationSection cs = boundConfig.getConfigurationSection(path);
 			Map<Action, ChestMenu> map = new EnumMap<>(Action.class);
